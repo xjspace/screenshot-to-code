@@ -60,6 +60,11 @@ If you have Docker installed on your system, in the root directory, run:
 
 ```bash
 echo "OPENAI_API_KEY=sk-your-key" > .env
+
+#可以使用proxy 第三方api
+echo "OPENAI_BASE_URL=https://api.openai.com/v1"> .env  
+
+
 docker-compose up -d --build
 ```
 
